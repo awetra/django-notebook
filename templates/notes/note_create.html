@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}| Create Note{% endblock %}
+
+{% block content %}
+    <div class="note-create">
+        <h1>Create a new note</h1>
+        <h5>Enter title for your note</h5>
+        <form method="post" class="form">
+            {% csrf_token %}
+            <div class="form-group">
+                <input name="{{ form.title.name }}" autocomplete="off" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-outline-secondary btn-create">Add note</button>
+            </div>
+        </form>
+    </div>
+{% endblock %}

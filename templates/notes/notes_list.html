@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="notes-list">
+    {% for note in notes %}
+        <div class="note-item">
+            <h1><a href="{{ note.get_absolute_url }}">{{ note.title }}</a></h1>
+        </div>
+    {% endfor %}
+    </div>
+</div>
+{% endblock %}

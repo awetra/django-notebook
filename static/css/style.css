@@ -1,0 +1,234 @@
+body{
+    min-width: 220px;
+    background-color: #e8e086;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    color: #313131;
+}
+
+nav{
+    background-color: #ceb359;
+}
+
+nav .navbar-brand{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+nav .nav-item{
+    margin-left: 30px;
+    font-size: 18px;
+}
+
+a{
+    color: #313131;
+}
+
+a:hover{
+    color: #000000;
+    text-decoration: none;
+}
+
+input[type="text"]::-webkit-input-placeholder {
+    color: #4a4a4a;
+} 
+input[type="text"]::-moz-placeholder {
+    color: #4a4a4a;
+}
+
+.content{
+    padding: 0px 250px;
+    margin-top: 30px;
+}
+
+.nav-container{
+    padding: 0 150px;
+}
+
+.notes-list h1{
+    padding-left: 10px;
+    font-size: 50px;
+}
+
+.note-item{
+    border-bottom: 1px solid #77603c;
+    padding: 5px 0;
+    margin-bottom: 30px; 
+}
+
+.note-detail h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+.note-detail h5{
+    text-align: center;
+    margin-top: -10px;
+    margin-left: 408px;                                                                            
+    font-size: 14px;
+    width: 50px;
+    border: 1px solid #77603c;
+    border-radius: 3px;
+}
+
+.note-detail .task{
+    position: relative;
+    border-bottom: 1px solid #77603c;
+    max-height: 55px;
+    height: 55px;
+}
+
+.note-detail .task-text{
+    font-family: 'Play', sans-serif;
+    padding: 25px 25px;
+}
+
+.note-detail .task-category{
+    position: absolute;
+    border: 1px solid #77603c;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-top: 35px;
+    margin-left: 5px;
+}
+
+.note-detail .form-control{
+    background-color: transparent;
+    background: transparent;
+    border: 0;
+    width: 830px;
+    padding: 35px 9px;
+    font-size: 20px;
+    color: #313131;
+}
+
+.note-detail .form-control:focus{
+    box-shadow: none;
+    background-color: transparent;
+    background: transparent;
+}
+
+.note-detail .select-category{
+    max-width: 10px;
+    max-height: 10px;
+    width: 10px;
+    height: 10px;
+    font-size: 15px;
+}
+
+.note-create{
+    margin-top: 50px;
+}
+
+.note-create h1{
+    text-align: center;
+    font-size: 60px;
+}
+
+.note-create h5{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.note-create .form-control{
+    background-color: transparent;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #77603c;
+    border-radius: 0;
+    margin-left: 220px;
+    width: 430px;
+    font-size: 20px;
+    color: #313131;
+}
+
+.note-create .form-control:focus{
+    background-color: transparent;
+    background: transparent;
+    box-shadow: none;
+}
+
+.note-create .btn-create{
+    margin-top: 50px;
+    border-radius: 0;
+    border: 1px solid #77603c;
+    color: #313131;
+    padding: 20px 30px;
+    margin-left: 370px;
+}
+
+.login{
+    border: 1px solid #77603c;
+    margin-top: 50px;
+    padding: 30px 0;
+}
+
+.login input[type="text"]::-webkit-input-placeholder {
+    color: #65686b;
+} 
+.login input[type="text"]::-moz-placeholder {
+    color: #65686b;
+}
+
+.login .btn-login{
+    width: 100%;
+    background-color: #77603c;
+    border: 1px solid #313131;
+}
+
+.login .btn-sign-up{
+    width: 100%;
+    background-color: #5eb741;
+    border: 1px solid #313131;
+}
+
+.login .errors{
+    border: 1px solid #77603c;
+    margin-bottom: 10px;
+}
+
+.login .errors p{
+    text-align: center;
+    font-size: 16px;
+    color: #de1010;
+    padding-top: 15px;
+}
+
+.sign-up{
+    border: 1px solid #77603c;
+    margin-top: 50px;
+    padding: 30px 0;
+}
+
+.sign-up input[type="text"]::-webkit-input-placeholder {
+    color: #65686b;
+} 
+.sign-up input[type="text"]::-moz-placeholder {
+    color: #65686b;
+}
+
+.sign-up .btn-login{
+    width: 100%;
+    background-color: #77603c;
+    border: 1px solid #313131;
+}
+.sign-up .btn-sign-up{
+    width: 100%;
+    background-color: #5eb741;
+    border: 1px solid #313131;
+}
+
+.sign-up .errors{
+    border: 1px solid #77603c;
+    margin-bottom: 10px;
+}
+
+.sign-up .errors p{
+    text-align: center;
+    font-size: 16px;
+    color: #de1010;
+    padding-top: 15px;
+}

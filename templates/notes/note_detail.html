@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %} | {{ note.title }}{% endblock %}
+
+{% block content %}
+    <div class="note-detail">
+        <h1 class="note-title">{{ note.title }}</h1>
+        <a href="{{ note.get_delete_url }}"><h5>Delete</h5></a>
+        <div class="tasks">
+            {% for task in tasks %}
+            <div class="task">
+                <a href="{{ task.get_delete_url }}" class="delete-task"><div class="task-category" style="background-color: {{ task.category.color }}"></div></a>
+                <div class="task-text">{{ task.text }}</div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="task">
+            <form action="" method="post" class="form-inline">
+                {% csrf_token %}
+                <div class="form-group">
+                    <select class="form-control select-category" name="{{ form.category.name }}" id="id_category">
+                        <option value="4">Black</option>
+                        <option value="1">Yellow</option>
+                        <option value="2">Red</option>
+                        <option value="3">Green</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input name="{{ form.text.name }}" autocomplete="off" type="text" required="" class="form-control" placeholder=". . .">
+                </div>
+            </form>
+        </div>
+{% endblock %}
