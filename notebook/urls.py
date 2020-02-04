@@ -17,15 +17,11 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls import handler404
 
-from . import views
-
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('login/', views.login, name='login'),
-    path('logout/', views.logout, name='logout'),
-    path('sign-up/', views.sign_up, name='sign_up'),
+    path('accounts/', include('accounts.urls'))
     path('', include('notes.urls'))
 ]
 
-handler404 = 'notebook.views.handler404'
+handler404 = 'accounts.views.handler404'

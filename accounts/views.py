@@ -3,7 +3,6 @@ from django.contrib.auth.models import User
 from django.shortcuts import render, redirect
 
 
-
 def handler404(request, exception):
     return render(request, 'handler404.html', status=404)
 
@@ -14,8 +13,6 @@ def login(request):
     if request.method == 'POST':
         login = request.POST['login']
         password = request.POST['password']
-
-        print(login, password)
 
         user = auth.authenticate(username=login, password=password)
         if not (user is None):
@@ -45,7 +42,6 @@ def sign_up(request):
     context = {}
 
     if request.method == 'POST':
-        print(request.POST)
         username = request.POST['username']
         password = request.POST['password']
 
